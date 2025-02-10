@@ -8,7 +8,8 @@ export function level(hero) {
         level = 'critical';
     }
     return level;
-  };
+    }
+
 
 const dataHero = [
         {name: 'мечник', health: 10},
