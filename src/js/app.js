@@ -10,13 +10,9 @@ export function level(hero) {
     return level;
     }
 
-
-const dataHero = [
-        {name: 'мечник', health: 10},
-        {name: 'маг', health: 100},
-        {name: 'лучник', health: 80},
-    ];
-
-export const sortHero = dataHero.sort(function(a, b) {
-    return b.health - a.health;
-    });
+export function sortHero(data) {
+    let result = data.sort(function(a, b) {
+        return b.health - a.health;
+        })
+    return result;
+    }
